@@ -9,7 +9,7 @@ library(doParallel)
 ############# Train GAM recursively for all the out-of-sample data
 ################################################################################
 ## Read data
-Data <- readRDS(file="../newdata/Data_RTE.RDS") #
+Data <- readRDS(file="../data/Data_RTE.RDS") #
 Data$Month = strftime(Data$DateD,"%m") 
 Data$Day =  strftime(Data$DateD,"%d") 
 Data[Data$WeekDays == "Monday",'DayofWeek'] = 'Mon'
@@ -161,7 +161,7 @@ source("cvblock.R")
 source('buildBlock.R')
 
 # Read data
-Data <- readRDS(file="../newdata/Data_RTE.RDS") #
+Data <- readRDS(file="../data/Data_RTE.RDS") #
 Data$Month = strftime(Data$DateD,"%m") 
 Data$Day =  strftime(Data$DateD,"%d") 
 Data[Data$WeekDays == "Monday",'DayofWeek'] = 'Mon'

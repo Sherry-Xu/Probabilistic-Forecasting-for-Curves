@@ -26,7 +26,7 @@ PrepareData = function(DataSelect, feature_list, date_fin,date_fin2){
                      "DataTestY" = DataTestY, "DataTestX" = DataTestX))
 }
 
-Data <- readRDS(file="../newdata/Data_RTE.RDS")
+Data <- readRDS(file="../data/Data_RTE.RDS")
 Data$Month = strftime(Data$DateD,"%m") 
 Data$Day =  strftime(Data$DateD,"%d") 
 Data[Data$WeekDays == "Monday",'DayofWeek'] = 'Mon'
