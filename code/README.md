@@ -2,7 +2,7 @@
 
 PreditInt_F.R contains all the functions that are used in SimulationExperiments.R and RealDataAnalysis.R
 
-SimulationExperiments.R is for simulation experiments using the parameters in parameters.R
+SimulationExperiments.R is for simulation experiments using the settings specified in parameters.R
 
 RealDataAnalysis.R is for probabilistic forecasting for electricity load curves
 
