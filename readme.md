@@ -27,4 +27,4 @@ The code directory contians all the necessary files to conduct simulation experi
 
 
 ## Results illustration
-An illustration of the out of sample forecasting for the year 2019 can be find in https://www.dropbox.com/s/hi274jlu8bx4tnl/OutofSampleForecasts2019.mp4?dl=0 
+An illustration of the out of sample forecasting for the year 2019 can be found in https://www.dropbox.com/s/hi274jlu8bx4tnl/OutofSampleForecasts2019.mp4?dl=0 
