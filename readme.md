@@ -2,7 +2,7 @@
 
 ## Data 
 ### Abstract
-The real data set consists of French daily electricity load data and temperature data from January 1, 2012 to December 31, 2019. The French electricity consumption data are collected from the website of the system operator RTE (Réseau de Transport d'Electricité): https://opendata.rte-france. com) at a temporal resolution of every half-hour (i.e. 48 points on each day). We obtained data from 96 meteostations in France from the website of the French weather forecaster Météo-France(https: //donneespubliques.meteofrance.fr/). Temperature data are provided at a three hours resolution and interpolated with natural cubic splines at a half-hour resolution.
+The real data set consists of French daily electricity load data and temperature data from January 1, 2012 to December 31, 2019. The French electricity consumption data are collected from the website of the system operator RTE (Réseau de Transport d'Electricité): https://opendata.rte-france.com) at a temporal resolution of every half-hour (i.e. 48 points on each day). We obtained data from 96 meteostations in France from the website of the French weather forecaster Météo-France(https://donneespubliques.meteofrance.fr/). Temperature data are provided at a three hours resolution and interpolated with natural cubic splines at a half-hour resolution.
 
 ### Availability
 The real data used in the manuscript can be find in the data directory with a description of the data dictionary.
