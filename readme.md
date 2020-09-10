@@ -21,7 +21,7 @@ The code directory contians all the necessary files to conduct simulation experi
 
 
 ## Reproducibility workflow
-* For simulations, first run the SimulationExperiments.R by specify the setting in parameter.R. After obtained the results, use SimulationResultsAnalysis.ipynb to obtain the figures and tables.
+* For simulations, first run the SimulationExperiments.R by specify the setting in parameter.R. After obtaining the results, use SimulationResultsAnalysis.ipynb to produce the figures and tables.
 
 * For Real data anlaysis, the results of the proposed model can be obtained by runing RealDataAnalysis.R. Results from the three alternative models can be obtained from the other three code scripts for alternative models.
 
