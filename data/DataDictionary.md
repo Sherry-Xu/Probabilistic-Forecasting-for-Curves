@@ -36,6 +36,6 @@ Temp_s99_max: maximum smoothed temperature with smooth rate 0.99
 
 Summer_break: 10 means is the summer break period, 0 means otherwise
 
-Christmas_break:20 means is the Christmas break period, 0 means otherwise
+Christmas_break: 20 means is the Christmas break period, 0 means otherwise
 
 WeekEnd: TRUE means the day is in weekends, FALSE means otherwise
