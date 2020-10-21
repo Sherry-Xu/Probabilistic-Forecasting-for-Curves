@@ -1,37 +1,30 @@
-## Welcome to GitHub Pages
+# Probabilistic Forecasting for Daily Electricity Loads and Quantiles for Curve-to-Curve Regression
 
-You can use the [editor on GitHub](https://github.com/Sherry-Xu/Probabilistic-Forecasting-for-Curves/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Data 
+### Abstract
+The real data set consists of French daily electricity load data and temperature data from January 1, 2012 to December 31, 2019. The French electricity consumption data are collected from the website of the system operator RTE (Réseau de Transport d'Electricité): https://opendata.rte-france.com) at a temporal resolution of every half-hour (i.e. 48 points on each day). We obtained data from 96 meteostations in France from the website of the French weather forecaster Météo-France(https://donneespubliques.meteofrance.fr/). Temperature data are provided at a three hours resolution and interpolated with natural cubic splines at a half-hour resolution.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Availability
+The real data used in the manuscript can be found in the data directory with a description of the data dictionary.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Code
+The code directory contians all the necessary files to conduct simulation experiments and real data analysis.
 
-```markdown
-Syntax highlighted code block
+* PreditInt_F.R contains all the functions that are used in SimulationExperiments.R and RealDataAnalysis.R
 
-# Header 1
-## Header 2
-### Header 3
+* SimulationExperiments.R is for simulation experiments using the settings specified in parameters.R
 
-- Bulleted
-- List
+* RealDataAnalysis.R is for probabilistic forecasting for electricity load curves
 
-1. Numbered
-2. List
+* Alternative_GAM_ARMAerrorcorrection_Recursive.R, Alternative_SAR_ARMAerrorcorrection_Recursive.R and Alternative_SARX_ARMAerrorcorrection_Recursive.R are the codes for the three alternative models used in the paper
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## Reproducibility workflow
+* For simulations, first run the SimulationExperiments.R by specify the setting in parameter.R. After obtaining the results, use SimulationResultsAnalysis.ipynb to produce the figures and tables.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* For Real data anlaysis, the results of the proposed model can be obtained by runing RealDataAnalysis.R. Results from the three alternative models can be obtained from the other three code scripts for alternative models.
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Sherry-Xu/Probabilistic-Forecasting-for-Curves/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Results illustration
+An illustration of the out of sample forecasting for the year 2019 can be found in https://www.dropbox.com/s/hi274jlu8bx4tnl/OutofSampleForecasts2019.mp4?dl=0 
